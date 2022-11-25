@@ -25,8 +25,8 @@ loader.load(
 		const paths = data.paths;
 		const group = new THREE.Group();
 		group.scale.multiplyScalar(0.001);
-		group.position.x = -0.89;
-		group.position.y = 1.45;
+		group.translateX(-0.89);
+		group.translateY(1.5);
 		group.scale.y *= -1;
 
 		for (let i = 0; i < paths.length; i++) {
