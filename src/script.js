@@ -45,7 +45,7 @@ loader.load(
 		}
 
 		group.scale.multiplyScalar(0.001);
-		group.translateX(-0.89);
+		group.translateX(-0.5);
 		group.translateY(1.5);
 		group.scale.y *= -1;
 
