@@ -24,10 +24,6 @@ loader.load(
 	function (data) {
 		const paths = data.paths;
 		const group = new THREE.Group();
-		group.scale.multiplyScalar(0.001);
-		group.translateX(-0.89);
-		group.translateY(1.5);
-		group.scale.y *= -1;
 
 		for (let i = 0; i < paths.length; i++) {
 			const path = paths[i];
@@ -47,6 +43,11 @@ loader.load(
 				group.add(mesh);
 			}
 		}
+
+		group.scale.multiplyScalar(0.001);
+		group.translateX(-0.89);
+		group.translateY(1.5);
+		group.scale.y *= -1;
 
 		scene.add(group);
 	},
