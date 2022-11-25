@@ -9,11 +9,11 @@ const canvas = document.querySelector('canvas.webgl');
 
 // Scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xff0000);
+// scene.background = new THREE.Color(0xff0000);
 
-const helper = new THREE.GridHelper(160, 10);
-helper.rotation.x = Math.PI / 2;
-scene.add(helper);
+// const helper = new THREE.GridHelper(160, 10);
+// helper.rotation.x = Math.PI / 2;
+// scene.add(helper);
 
 // Textures
 // const textureLoader = new THREE.TextureLoader();
@@ -30,7 +30,7 @@ loader.load(
 		const paths = data.paths;
 		const group = new THREE.Group();
 		group.scale.multiplyScalar(0.0011);
-		group.position.x = -1;
+		group.position.x = -0.98;
 		group.position.y = 1.6;
 
 		for (let i = 0; i < paths.length; i++) {
