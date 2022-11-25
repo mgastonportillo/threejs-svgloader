@@ -24,6 +24,9 @@ loader.load(
 	function (data) {
 		const paths = data.paths;
 		const group = new THREE.Group();
+		group.scale.multiplyScalar(0.0011);
+		group.position.x = -0.97;
+		group.position.y = 1.6;
 
 		for (let i = 0; i < paths.length; i++) {
 			const path = paths[i];
@@ -39,15 +42,11 @@ loader.load(
 			for (let j = 0; j < shapes.length; j++) {
 				const shape = shapes[j];
 				const geometry = new THREE.ShapeGeometry(shape);
+				geometry.applyMatrix4(new THREE.Matrix4().makeScale(1, -1, 1));
 				const mesh = new THREE.Mesh(geometry, material);
 				group.add(mesh);
 			}
 		}
-
-		group.scale.multiplyScalar(0.001);
-		group.translateX(-0.5);
-		group.translateY(1.5);
-		group.scale.y *= -1;
 
 		scene.add(group);
 	},
