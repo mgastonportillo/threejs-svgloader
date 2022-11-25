@@ -25,8 +25,8 @@ loader.load(
 		const paths = data.paths;
 		const group = new THREE.Group();
 		group.scale.multiplyScalar(0.001);
-		group.position.x = -1;
-		group.position.y = 1.2;
+		group.position.x = -0.9;
+		group.position.y = 1.4;
 		group.scale.y *= -1;
 
 		for (let i = 0; i < paths.length; i++) {
@@ -100,7 +100,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.x = 0;
 camera.position.y = 0;
-camera.position.z = 4;
+camera.position.z = 3.5;
 scene.add(camera);
 
 // Controls
