@@ -3,7 +3,6 @@ import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import './style.css';
 
-// Base
 // Canvas
 const canvas = document.querySelector('canvas.webgl');
 
@@ -69,9 +68,7 @@ loader.load(
 
 // Object
 // const geometry = new THREE.BoxGeometry(1, 1, 1);
-// const material = new THREE.MeshBasicMaterial({
-// 	map: texture,
-// });
+// const material = new THREE.MeshBasicMaterial({ map: texture });
 // const mesh = new THREE.Mesh(geometry, material);
 // scene.add(mesh);
 
@@ -112,9 +109,7 @@ scene.add(camera);
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
 
-/**
- * Renderer
- */
+// Renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true, canvas: canvas });
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));

@@ -5,4 +5,5 @@
 <h2>Bookmarks</h2>
 <ul>
   <li><a href="https://threejs.org/docs/#examples/en/loaders/SVGLoader">SVGLoader documentation</a></li>
+  <li><a href="https://stackoverflow.com/questions/56651720/why-does-the-three-js-svgloader-render-svgs-upside-down">Why do SVGs load upside down with SVGLoader?</a></li>
 </ul>
